@@ -1,9 +1,60 @@
+:root {
+  /* see https://margaret2.github.io/pantone-colors/ */
+
+  --dark-sapphire: #262b37;
+  --anthracite: #28282d;
+  --bright-white: #f4f5f0;
+  /* main black */
+  --color: var(--dark-sapphire);
+
+  /* background */
+  --background: var(--bright-white);
+  /* --gardenia: #f1e8df; */
+  color: var(--color);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  :root {
+    --color: var(--bright-white);
+    --background: var(--dark-sapphire);
+
+    color: var(--color);
+  }
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--background);
+  background: var(--background);
+  color: var(--color);
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'EB Garamond', serif;
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: var(--color);
+}
+
+b {
+  font-weight: 600;
 }
 
 a {
@@ -13,14 +64,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }
