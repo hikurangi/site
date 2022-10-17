@@ -17,7 +17,7 @@
 }
 
 .wrapper {
-  width: 70vw;
+  width: 70em;
 }
 
 @media screen and (max-width: breakpoint-lg) {
