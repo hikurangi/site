@@ -1,10 +1,8 @@
 import type { NextPage } from 'next'
-// import Head from 'next/head'
-// import Image from 'next/image'
-import '../styles/Home.module.css'
+
+import styles from '../styles/Home.module.css'
 
 type LinkChildren = string | React.ReactElement
-
 interface LinkProps {
   href: string
   children: LinkChildren
@@ -16,47 +14,31 @@ const Link = ({ href, children }: LinkProps) => (
   </a>
 )
 
-const inlineStyles = {
-  home: { margin: '100px 60px 200px' },
-  mainText: {
-    fontSize: '48px',
-  },
-}
-
 const email = 'hikurangi@gmail.com'
-const bodyText = [
-  'Hikurangi Schaverien-Kaa ',
-  <Link
-    key={1}
-    href='https://nzmusician.co.nz/features/get-yer-kit-off-hikurangi-schaverien-kaa/'>
-    beats the heck out of the drums
-  </Link>,
-  ' and ',
-  <Link key={3} href='https://github.com/hikurangi'>
-    writes clean code
-  </Link>,
-  ". He's mostly based in Wellington, Aotearoa (NZ). You can reach him via ",
-  <Link key={4} href={`mailto:${email}`}>
-    <em>{email}</em>
-  </Link>,
-  ' or find him ',
-  <Link key={6} href='https://instagram.com/ignarukih'>
-    on
-  </Link>,
-  ' ',
-  <Link key={7} href='https://soundcloud.com/ignarukih'>
-    the
-  </Link>,
-  ' ',
-  <Link key={8} href='https://www.linkedin.com/in/ignarukih/'>
-    socials
-  </Link>,
-  '.',
-]
+
 const Home: NextPage = () => (
-  <main style={inlineStyles.home}>
-    {' '}
-    <p style={inlineStyles.mainText}>{bodyText}</p>
+  <main className={styles.main}>
+    <div className={styles.wrapper}>
+      <p className={styles.primaryText}>
+        Hikurangi Schaverien-Kaa{' '}
+        <Link href='https://nzmusician.co.nz/features/get-yer-kit-off-hikurangi-schaverien-kaa/'>
+          beats the heck out of the drums
+        </Link>{' '}
+        and <Link href='https://github.com/hikurangi'>writes clean code</Link>.
+        <br />
+        He{"'"}s mostly based in{' '}
+        <Link href='https://en.wikipedia.org/wiki/Te_Whanganui-a-Tara'>
+          Te Whanganui-a-Tara
+        </Link>
+        , Aotearoa.
+        <br />
+        You can reach him via <Link href={`mailto:${email}`}>
+          email
+        </Link> or <Link href='https://instagram.com/ignarukih'>on</Link>{' '}
+        <Link href='https://soundcloud.com/ignarukih'>the</Link>{' '}
+        <Link href='https://www.twitter.com/ignarukih/'>socials</Link>.
+      </p>
+    </div>
   </main>
 )
 

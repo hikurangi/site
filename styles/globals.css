@@ -1,16 +1,27 @@
-:root {
-  /* see https://margaret2.github.io/pantone-colors/ */
+@value breakpoints: './breakpoints.module.css';
+@value breakpoint-sm, breakpoint-md, breakpoint-lg, breakpoint-xl, breakpoint-2xl from breakpoints;
 
+:root {
+  /* COLOURS */
+  /* see https://margaret2.github.io/pantone-colors/ */
   --dark-sapphire: #262b37;
-  --anthracite: #28282d;
+  /* --anthracite: #28282d; */
   --bright-white: #f4f5f0;
+
   /* main black */
-  --color: var(--dark-sapphire);
+  --foreground-color: var(--dark-sapphire);
 
   /* background */
-  --background: var(--bright-white);
+  --background-color: var(--bright-white);
   /* --gardenia: #f1e8df; */
-  color: var(--color);
+
+  /* BREAKPOINTS */
+  /* see https://chakra-ui.com/docs/styled-system/responsive-styles */
+  --breakpoint-sm: breakpoint-sm;
+  --breakpoint-md: breakpoint-md;
+  --breakpoint-lg: breakpoint-lg;
+  --breakpoint-xl: breakpoint-xl;
+  --breakpoint-2xl: breakpoint-2xl;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +29,10 @@
     color-scheme: dark;
   }
   :root {
-    --color: var(--bright-white);
-    --background: var(--dark-sapphire);
+    --foreground-color: var(--bright-white);
+    --background-color: var(--dark-sapphire);
 
-    color: var(--color);
+    color: var(--foreground-color);
   }
 }
 
@@ -31,9 +42,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: var(--background);
-  background: var(--background);
-  color: var(--color);
+  background-color: var(--background-color);
+  background: var(--background-color);
+  color: var(--foreground-color);
 }
 
 a,
@@ -50,16 +61,7 @@ p {
 a {
   font-style: italic;
   text-decoration: none;
-  color: var(--color);
-}
-
-b {
-  font-weight: 600;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--foreground-color);
 }
 
 * {
