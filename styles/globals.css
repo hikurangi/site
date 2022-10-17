@@ -2,7 +2,6 @@
 @value breakpoint-sm, breakpoint-md, breakpoint-lg, breakpoint-xl, breakpoint-2xl from breakpoints;
 
 :root {
-  /* COLOURS */
   /* see https://margaret2.github.io/pantone-colors/ */
   --dark-sapphire: #262b37;
   /* --anthracite: #28282d; */
@@ -14,14 +13,6 @@
   /* background */
   --background-color: var(--bright-white);
   /* --gardenia: #f1e8df; */
-
-  /* BREAKPOINTS */
-  /* see https://chakra-ui.com/docs/styled-system/responsive-styles */
-  --breakpoint-sm: breakpoint-sm;
-  --breakpoint-md: breakpoint-md;
-  --breakpoint-lg: breakpoint-lg;
-  --breakpoint-xl: breakpoint-xl;
-  --breakpoint-2xl: breakpoint-2xl;
 }
 
 @media (prefers-color-scheme: dark) {

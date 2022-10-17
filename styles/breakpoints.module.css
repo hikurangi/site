@@ -1,3 +1,4 @@
+/* see https://chakra-ui.com/docs/styled-system/responsive-styles */
 @value breakpoint-sm: 30em;
 @value breakpoint-md: 48em;
 @value breakpoint-lg: 62em;
