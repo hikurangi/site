@@ -51,12 +51,12 @@ p {
 
 a {
   font-style: italic;
-  text-decoration: none;
-  color: var(--foreground-color);
+  text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-color: rgb(255, 255, 255, 1);
 }
 
 * {
