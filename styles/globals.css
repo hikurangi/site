@@ -55,6 +55,10 @@ a {
   color: var(--foreground-color);
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
 }
