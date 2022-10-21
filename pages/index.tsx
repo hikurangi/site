@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import ExternalLink from '../components/ExternalLink'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/layouts.module.css'
 import mainStyleModule from '../styles/main.module.css'
 const email = 'hikurangi@gmail.com'
 

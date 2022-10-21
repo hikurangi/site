@@ -49,6 +49,15 @@ p {
   font-family: 'EB Garamond', serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
 a {
   font-style: italic;
   text-decoration: underline 0.1em rgba(255, 255, 255, 0);
@@ -61,4 +70,10 @@ a:hover {
 
 * {
   box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0 auto 0 0;
+  padding: 0;
 }
