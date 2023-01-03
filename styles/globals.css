@@ -61,6 +61,7 @@ h6 {
 a {
   font-style: italic;
   text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+  color: var(--foreground-color);
   transition: text-decoration-color 300ms;
 }
 
