@@ -28,7 +28,7 @@ const Home: NextPage = () => (
         <ExternalLink href={`mailto:${email}`}>email</ExternalLink> or{' '}
         <ExternalLink href='https://instagram.com/ignarukih'>on</ExternalLink>{' '}
         <ExternalLink href='https://soundcloud.com/ignarukih'>the</ExternalLink>{' '}
-        <ExternalLink href='https://www.twitter.com/ignarukih/'>
+        <ExternalLink href='https://www.twitter.com/ignarukih'>
           socials
         </ExternalLink>
         .
