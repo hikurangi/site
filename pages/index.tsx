@@ -9,8 +9,11 @@ const Home: NextPage = () => (
     <div className={styles.wrapper}>
       <p className={styles.primaryText}>
         Hikurangi Schaverien-Kaa{' '}
-        <ExternalLink href='https://nzmusician.co.nz/features/get-yer-kit-off-hikurangi-schaverien-kaa/'>
-          beats the heck out of the drums
+        <ExternalLink href='https://open.spotify.com/playlist/08r0quUDJZJVVcQ1kJEjx8'>
+          beats the heck
+        </ExternalLink>{' '}
+        <ExternalLink href='https://nzmusician.co.nz/features/get-yer-kit-off-hikurangi-schaverien-kaa'>
+          out of the drums
         </ExternalLink>{' '}
         and{' '}
         <ExternalLink href='https://github.com/hikurangi'>
