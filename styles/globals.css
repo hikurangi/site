@@ -25,6 +25,22 @@
 
     color: var(--foreground-color);
   }
+
+  a {
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+  }
+  a:hover {
+    text-decoration-color: rgb(255, 255, 255, 1);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  a {
+    text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+  }
+  a:hover {
+    text-decoration-color: rgb(0, 0, 0, 1);
+  }
 }
 
 html,
@@ -60,13 +76,9 @@ h6 {
 
 a {
   font-style: italic;
-  text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+  text-decoration: underline 0.1em rgba(0, 0, 0, 0);
   color: var(--foreground-color);
-  transition: text-decoration-color 300ms;
-}
-
-a:hover {
-  text-decoration-color: rgb(255, 255, 255, 1);
+  transition: text-decoration-color 450ms;
 }
 
 * {
