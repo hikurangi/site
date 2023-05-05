@@ -13,7 +13,10 @@ const Home: NextPage = () => (
           beats the heck
         </ExternalLink>{' '}
         <ExternalLink href='https://nzmusician.co.nz/features/get-yer-kit-off-hikurangi-schaverien-kaa'>
-          out of the drums
+          out of
+        </ExternalLink>{' '}
+        <ExternalLink href='https://www.youtube.com/watch?v=ckhCTmrQ4Mw'>
+          the drums
         </ExternalLink>{' '}
         and{' '}
         <ExternalLink href='https://github.com/hikurangi'>
@@ -28,10 +31,9 @@ const Home: NextPage = () => (
         , Aotearoa.
         <br />
         You can reach him via{' '}
-        <ExternalLink href={`mailto:${email}`}>email</ExternalLink> or{' '}
-        <ExternalLink href='https://instagram.com/ignarukih'>on</ExternalLink>{' '}
-        <ExternalLink href='https://soundcloud.com/ignarukih'>the</ExternalLink>{' '}
-        <ExternalLink href='https://www.twitter.com/ignarukih'>
+        <ExternalLink href={`mailto:${email}`}>email</ExternalLink> or on{' '}
+        <ExternalLink href='https://instagram.com/ignarukih'>the</ExternalLink>{' '}
+        <ExternalLink href='https://soundcloud.com/ignarukih'>
           socials
         </ExternalLink>
         .
