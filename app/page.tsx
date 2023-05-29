@@ -1,3 +1,5 @@
+// import { Metadata, NextPage } from 'next'
+
 import type { NextPage } from 'next'
 import ExternalLink from '../components/ExternalLink'
 import styles from '../styles/layouts.module.css'
