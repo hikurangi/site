@@ -1,10 +1,6 @@
 import Head from 'next/head'
 import '../styles/globals.css'
 
-import { EB_Garamond } from 'next/font/google'
-
-const ebGaramond = EB_Garamond({ subsets: ['latin', 'latin-ext'] })
-
 export default function RootLayout ({
   // Layouts must accept a children prop.
   // This will be populated with nested layouts or pages
@@ -20,10 +16,6 @@ export default function RootLayout ({
           href='https://fonts.gstatic.com'
           crossOrigin='anonymous'
         />
-        {/* <link
-          href='https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap'
-          rel='stylesheet'
-        ></link> */}
         <link rel='shortcut icon' href='/favicon.ico' />
         <link
           rel='apple-touch-icon'
@@ -44,7 +36,7 @@ export default function RootLayout ({
         />
       </Head>
       <html lang='en'>
-        <body className={ebGaramond.className}>{children}</body>
+        <body>{children}</body>
       </html>
     </>
   )

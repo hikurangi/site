@@ -6,10 +6,15 @@ import styles from '../styles/layouts.module.css'
 import mainStyleModule from '../styles/main.module.css'
 const email = 'hikurangi@gmail.com'
 
+import { EB_Garamond } from 'next/font/google'
+
+const ebGaramond = EB_Garamond({ subsets: ['latin', 'latin-ext'] })
+
+console.log({ styles, mainStyleModule })
 const Home: NextPage = () => (
   <main className={mainStyleModule.main}>
     <div className={styles.wrapper}>
-      <p className={styles.primaryText}>
+      <p className={`${styles.primaryText} ${ebGaramond.className}`}>
         Hikurangi Schaverien-Kaa{' '}
         <ExternalLink href='https://open.spotify.com/playlist/08r0quUDJZJVVcQ1kJEjx8'>
           beats the heck
