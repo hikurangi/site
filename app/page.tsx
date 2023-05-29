@@ -10,7 +10,6 @@ import { EB_Garamond } from 'next/font/google'
 
 const ebGaramond = EB_Garamond({ subsets: ['latin', 'latin-ext'] })
 
-console.log({ styles, mainStyleModule })
 const Home: NextPage = () => (
   <main className={mainStyleModule.main}>
     <div className={styles.wrapper}>
