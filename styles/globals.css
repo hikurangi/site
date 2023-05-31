@@ -4,14 +4,20 @@
 :root {
   /* see https://margaret2.github.io/pantone-colors/ */
   --dark-sapphire: #262b37;
+  --sodalite-blue: #253668;
   /* --anthracite: #28282d; */
+
   --bright-white: #f4f5f0;
+  --whisper-white: #ede6db;
 
   /* main black */
   --foreground-color: var(--dark-sapphire);
+  --foreground-color-highlight: var(--sodalite-blue);
 
   /* background */
   --background-color: var(--bright-white);
+  --background-color-highlight: var(--whisper-white);
+
   /* --gardenia: #f1e8df; */
 }
 
@@ -21,7 +27,9 @@
   }
   :root {
     --foreground-color: var(--bright-white);
+    --foreground-color-highlight:var(--whisper-white);
     --background-color: var(--dark-sapphire);
+    --background-color-highlight: var(--sodalite-blue)
 
     color: var(--foreground-color);
   }
@@ -30,6 +38,7 @@
     text-decoration: underline 0.1em rgba(255, 255, 255, 0);
   }
   a:hover {
+    /* TODO: hexify */
     text-decoration-color: rgb(255, 255, 255, 1);
   }
 }
@@ -47,8 +56,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   background-color: var(--background-color);
   background: var(--background-color);
   color: var(--foreground-color);
@@ -62,7 +71,7 @@ h4,
 h5,
 h6,
 p {
-  font-family: 'EB Garamond', serif;
+  font-family: var(--primary-font), serif;
 }
 
 h1,
