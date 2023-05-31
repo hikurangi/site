@@ -2,11 +2,16 @@ import '../styles/globals.css'
 
 import Head from 'next/head'
 import { EB_Garamond } from 'next/font/google'
+import { Metadata } from 'next'
 
 const ebGaramond = EB_Garamond({
   subsets: ['latin', 'latin-ext'],
   variable: '--primary-font'
 })
+
+export const metadata: Metadata = {
+  title: 'Hikurangi'
+}
 
 export default function RootLayout ({
   // Layouts must accept a children prop.
@@ -18,7 +23,6 @@ export default function RootLayout ({
   return (
     <>
       <Head>
-        <title>Hikurangi</title>
         <link
           rel='preconnect'
           href='https://fonts.gstatic.com'
